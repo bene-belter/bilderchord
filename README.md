@@ -15,10 +15,11 @@ And this is how it looks like after a picture was loaded and the app has assigne
 
 
 The stacked bar underneath the picture represents the colors of the centroids determined by kmeans. The length of the color in the bar represents the cluster-size. 
-Clustersize is also represented in the playable chord by note-length. The chord also represents the centroid's hsv-color-values as follows:/
-Hue - played note within an octave/
-Saturation - loudness of a note/
-Value - determines the octave the note gets played in/
+Clustersize is also represented in the playable chord by note-length. The chord also represents the centroid's hsv-color-values as follows:
+
+Hue - played note within an octave
+Saturation - loudness of a note
+Value - determines the octave the note gets played in
 
 
 I limited the notes within an octave to the notes within the key of C-major. In line 216 of the Bildakkord.py-script, you can choose which notes you want to select from the scale. Every selectable note would be accessed by storing "range(12)" in the variable "keyselected".
