@@ -9,7 +9,7 @@ This is the interface without any picture loaded into it:
 ![Bildakkord1](https://user-images.githubusercontent.com/106880521/172020431-4644758a-2df4-4dd3-924d-79307b88db03.PNG)
 
 
-And this is how it looks like after it assigned a chord to a picture:
+And this is how it looks like after a picture was loaded and the app has assigned a chord to the picture:
 
 ![Bildakkord2](https://user-images.githubusercontent.com/106880521/172020512-660d08a5-8d43-41ee-827e-bd447a203d02.PNG)
 
