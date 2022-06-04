@@ -18,8 +18,11 @@ The stacked bar underneath the picture represents the colors of the centroids de
 
 Clustersize is also represented in the playable chord by note-length. 
 The cluster's colors get translated to hsv-color-codes (hue, satuaration and value) which are then interpreted by the chord as:
+
 Hue - played note within an octave
+
 Saturation - loudness of a note
+
 Value - determines the octave the note gets played in
 
 I limited the notes within an octave to the notes within the key of C-major. In line 216 of the Bildakkord.py-script, you can choose which notes you want to select from the scale. Every selectable note would be accessed by storing "range(12)" in the variable "keyselected".
