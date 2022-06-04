@@ -4,4 +4,19 @@ I made a little app that turns pictures into chords. It is implemented with a GU
 The Bildakkord.py-script also includes an implementation of the k-means algorithm, because I was running into problems using the kmeans of sklearn together with wxPython.
 
 
-![example1-jeremy-bishop](https://user-images.githubusercontent.com/106880521/172020297-b29d51f1-f652-463d-b376-3128c523f0ce.jpg)
+This is the interface without any picture loaded into it:
+
+![Bildakkord1](https://user-images.githubusercontent.com/106880521/172020431-4644758a-2df4-4dd3-924d-79307b88db03.PNG)
+
+
+And this is how it looks like after it assigned a chord to a picture. 
+![Bildakkord2](https://user-images.githubusercontent.com/106880521/172020512-660d08a5-8d43-41ee-827e-bd447a203d02.PNG)
+
+The staked bar underneath the picture represents the colors of the centroids determined by kmeans. The length of the color represents the cluster-size. 
+
+Clustersize is also represented in the playable chord by note-length. The cluster's colors get translated to hsv-color-codes (hue, satuaration and value) which are then interpreted by the chord as:
+Hue - played note within an octave
+Saturation - loudness of a note
+Value - determines the octave the note gets played in
+
+I limited the notes within an octave to the notes within the key of C-major. This is just to limit the amount of unpleasant chords to a minimum, but if you are into otherworldly experiences, you can cut that restraint so that all 12 notes of the octave are allowed. 
