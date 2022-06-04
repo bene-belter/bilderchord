@@ -213,17 +213,17 @@ class MyFrame(wx.Frame):
         biggest_count = ordered_values[0]
         keynames = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
         octavenames = [1,2,3,4,5,6,7]
-        cmajor = [0,2,4,5,7,9,11]
+        keyselected = [0,2,4,5,7,9,11]
         notenames = []
 
         for i in ordered_keys:
             newnoise = centerpic_HSV_FULL[0,i]
-            whichkey = math.floor(newnoise[0] * (7/256))
-            whichoctave = math.floor(newnoise[2] * (6/256))
+            whichkey = math.floor(newnoise[0] * (len(keyselected)/256))
+            whichoctave = math.floor(newnoise[2] * ((len(keyselected)-1)/256))
 
-            notenames.append(keynames[cmajor[whichkey]]+str(octavenames[whichoctave]))
+            notenames.append(keynames[keyselected[whichkey]]+str(octavenames[whichoctave]))
 
-            actualnote = pyo.midiToHz(24+cmajor[whichkey]+12*whichoctave)
+            actualnote = pyo.midiToHz(24+keyselected[whichkey]+12*whichoctave)
 
             intensity = float((newnoise[1]/255)*0.9+0.1)
 
