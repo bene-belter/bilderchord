@@ -11,7 +11,8 @@ This is the interface without any picture loaded into it:
 
 And this is how it looks like after a picture was loaded and the app has assigned a chord to the picture:
 
-![Bildakkord2](https://user-images.githubusercontent.com/106880521/172020512-660d08a5-8d43-41ee-827e-bd447a203d02.PNG)
+![Bildakkord2](https://user-images.githubusercontent.com/106880521/172021860-ebce12d6-2a7a-413f-812a-6fb0d6db2865.PNG)
+
 
 The staked bar underneath the picture represents the colors of the centroids determined by kmeans. The length of the color represents the cluster-size. 
 
