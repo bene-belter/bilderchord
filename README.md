@@ -18,7 +18,9 @@ The stacked bar underneath the picture represents the colors of the centroids de
 Clustersize is also represented in the playable chord by note-length. The chord also represents the centroid's hsv-color-values as follows:
 
 Hue - played note within an octave
+
 Saturation - loudness of a note
+
 Value - determines the octave the note gets played in
 
 
