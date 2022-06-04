@@ -14,9 +14,10 @@ And this is how it looks like after a picture was loaded and the app has assigne
 ![Bildakkord2](https://user-images.githubusercontent.com/106880521/172021860-ebce12d6-2a7a-413f-812a-6fb0d6db2865.PNG)
 
 
-The staked bar underneath the picture represents the colors of the centroids determined by kmeans. The length of the color represents the cluster-size. 
+The stacked bar underneath the picture represents the colors of the centroids determined by kmeans. The length of the color represents the cluster-size. 
 
-Clustersize is also represented in the playable chord by note-length. The cluster's colors get translated to hsv-color-codes (hue, satuaration and value) which are then interpreted by the chord as:
+Clustersize is also represented in the playable chord by note-length. 
+The cluster's colors get translated to hsv-color-codes (hue, satuaration and value) which are then interpreted by the chord as:
 Hue - played note within an octave
 Saturation - loudness of a note
 Value - determines the octave the note gets played in
